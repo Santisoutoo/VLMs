@@ -1,7 +1,14 @@
 [project]
 name = "vlms"
 version = "0.1.0"
-description = "Add your description here"
+description = "Testing some tiny VLMs (CPU)"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "numpy<2",
+    "torch==2.2.0",
+    "transformers==4.40.0",
+    "Pillow",
+    "accelerate",
+    "evaluate"
+]
