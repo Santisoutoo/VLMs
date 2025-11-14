@@ -16,26 +16,30 @@ Cada modelo procesa imágenes de la carpeta `img/` y guarda las descripciones en
 
 ```
 .
-├── dockerfile                 # Contenedor Docker con dependencias
-├── makefile                   # Comandos para construir y ejecutar
-├── requirements.txt           # Dependencias de Python
-├── pyproject.toml            # Configuración del proyecto
-├── main.py                   # Punto de entrada principal
-├── README.md                 # Este archivo
-│
-├── img/                      # Imágenes de entrada
+├── dockerfile               # Contenedor Docker con dependencias
+├── makefile                 # Comandos para construir y ejecutar
+├── requirements.txt         # Dependencias de Python
+├── pyproject.toml           # Configuración del proyecto
+├── main.py                  # Punto de entrada principal
+├── README.md                # Este archivo
+
+├── docs/                    # Memoria del proyecto
+│   ├── reporte.odt
+│   ├── reporte.pdf
+|
+├── img/                     # Imágenes de entrada
 │   ├── clouds/              # Fotos de nubes
 │   ├── drinks/              # Fotos de bebidas
 │   ├── food/                # Fotos de comida
 │   ├── planes/              # Fotos de aviones
 │   └── racing_cars/         # Fotos de coches de carreras
 │
-├── outputs/                  # Descripciones generadas
-│   ├── model_1/             # Resultados de BLIP
-│   ├── model_2/             # Resultados de ViT-GPT2
+├── outputs/                 # Descripciones generadas
+│   ├── blip/                # Resultados de BLIP
+│   ├── vitgpt2/             # Resultados de ViT-GPT2
 │   └── gemini/              # Resultados de Gemini
 │
-└── scr/                      # Código fuente
+└── scr/                     # Código fuente
     ├── gemini/
     │   └── gemini.py        # Integración con Gemini API
     └── models/
