@@ -31,3 +31,11 @@ run-model2:
 		-v $(PROJECT_DIR)/outputs:/opt/project/outputs \
 		--rm \
 		$(IMAGE) python /opt/project/main.py --model model_2
+
+run-gemini:
+	docker run \
+		--shm-size=4g \
+		-v $(PROJECT_DIR):/opt/project \
+		-v $(PROJECT_DIR)/outputs:/opt/project/outputs \
+		--rm \
+		$(IMAGE) python /opt/project/main.py --model gemini

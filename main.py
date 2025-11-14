@@ -1,6 +1,7 @@
-import argparse
 from scr.models.model_1.blip_captioner import run_blip
 from scr.models.model_2.vitgpt2_captioner import run_vitgpt2
+from scr.gemini.gemini import run_gemini
+import argparse
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -11,5 +12,7 @@ if __name__ == "__main__":
         run_blip()
     elif args.model == "model_2":
         run_vitgpt2()
+    elif args.model == "gemini":
+        run_gemini()
     else:
-        raise ValueError("Model must be: model_1 or model_2")
+        raise ValueError("Model must be: model_1, model_2 or gemini")

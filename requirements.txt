@@ -4,3 +4,5 @@ transformers==4.40.0
 Pillow
 accelerate
 evaluate
+python-dotenv
+google-generativeai
